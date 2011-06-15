@@ -13,6 +13,8 @@
 		949E7B2713A8DF2600D51F48 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 949E7B2513A8DF2600D51F48 /* Credits.rtf */; };
 		949E7B2A13A8DF2600D51F48 /* Id3v2AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 949E7B2913A8DF2600D51F48 /* Id3v2AppDelegate.m */; };
 		949E7B2D13A8DF2600D51F48 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 949E7B2B13A8DF2600D51F48 /* MainMenu.xib */; };
+		949E7B3913A8E24600D51F48 /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 949E7B3813A8E24600D51F48 /* MainWindowController.m */; };
+		949E7B3B13A8E39F00D51F48 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 949E7B3A13A8E39F00D51F48 /* MainWindow.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +23,17 @@
 		949E7B1913A8DF2600D51F48 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		949E7B1A13A8DF2600D51F48 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		949E7B1B13A8DF2600D51F48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		949E7B1E13A8DF2600D51F48 /* Id3v2-Info.plist */ = {isa = PBXFileReference; path = "Id3v2-Info.plist"; sourceTree = "<group>"; };
+		949E7B1E13A8DF2600D51F48 /* Id3v2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Id3v2-Info.plist"; sourceTree = "<group>"; };
 		949E7B2013A8DF2600D51F48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		949E7B2213A8DF2600D51F48 /* Id3v2-Prefix.pch */ = {isa = PBXFileReference; path = "Id3v2-Prefix.pch"; sourceTree = "<group>"; };
+		949E7B2213A8DF2600D51F48 /* Id3v2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Id3v2-Prefix.pch"; sourceTree = "<group>"; };
 		949E7B2313A8DF2600D51F48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		949E7B2613A8DF2600D51F48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		949E7B2813A8DF2600D51F48 /* Id3v2AppDelegate.h */ = {isa = PBXFileReference; path = Id3v2AppDelegate.h; sourceTree = "<group>"; };
+		949E7B2813A8DF2600D51F48 /* Id3v2AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Id3v2AppDelegate.h; sourceTree = "<group>"; };
 		949E7B2913A8DF2600D51F48 /* Id3v2AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Id3v2AppDelegate.m; sourceTree = "<group>"; };
 		949E7B2C13A8DF2600D51F48 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		949E7B3713A8E24600D51F48 /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainWindowController.h; path = Classes/MainWindowController.h; sourceTree = "<group>"; };
+		949E7B3813A8E24600D51F48 /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainWindowController.m; path = Classes/MainWindowController.m; sourceTree = "<group>"; };
+		949E7B3A13A8E39F00D51F48 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = Resources/UI/MainWindow.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +87,7 @@
 		949E7B1C13A8DF2600D51F48 /* Id3v2 */ = {
 			isa = PBXGroup;
 			children = (
+				949E7B3313A8E0E800D51F48 /* Classes */,
 				949E7B2813A8DF2600D51F48 /* Id3v2AppDelegate.h */,
 				949E7B2913A8DF2600D51F48 /* Id3v2AppDelegate.m */,
 				949E7B2B13A8DF2600D51F48 /* MainMenu.xib */,
@@ -93,6 +99,7 @@
 		949E7B1D13A8DF2600D51F48 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				949E7B3613A8E11B00D51F48 /* UI */,
 				949E7B1E13A8DF2600D51F48 /* Id3v2-Info.plist */,
 				949E7B1F13A8DF2600D51F48 /* InfoPlist.strings */,
 				949E7B2213A8DF2600D51F48 /* Id3v2-Prefix.pch */,
@@ -100,6 +107,23 @@
 				949E7B2513A8DF2600D51F48 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		949E7B3313A8E0E800D51F48 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				949E7B3713A8E24600D51F48 /* MainWindowController.h */,
+				949E7B3813A8E24600D51F48 /* MainWindowController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		949E7B3613A8E11B00D51F48 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				949E7B3A13A8E39F00D51F48 /* MainWindow.xib */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +176,7 @@
 				949E7B2113A8DF2600D51F48 /* InfoPlist.strings in Resources */,
 				949E7B2713A8DF2600D51F48 /* Credits.rtf in Resources */,
 				949E7B2D13A8DF2600D51F48 /* MainMenu.xib in Resources */,
+				949E7B3B13A8E39F00D51F48 /* MainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +189,7 @@
 			files = (
 				949E7B2413A8DF2600D51F48 /* main.m in Sources */,
 				949E7B2A13A8DF2600D51F48 /* Id3v2AppDelegate.m in Sources */,
+				949E7B3913A8E24600D51F48 /* MainWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
