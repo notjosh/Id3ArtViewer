@@ -82,7 +82,7 @@
     TagLoader *tl = [[TagLoader alloc] init];
     [tl loadFileAtPath:path];
 
-    [_path setStringValue:path];
+    [_path setStringValue:[path lastPathComponent]];
 
     NSMutableString *s = [NSMutableString string];
     [s appendFormat:@"Title:   %@\n", tl.title];
@@ -92,7 +92,8 @@
     [s appendFormat:@"Comment: %@\n", tl.comment];
     [s appendFormat:@"Track:   %@\n", tl.track];
     [s appendFormat:@"Genre:   %@",   tl.title];
-    [_description setStringValue:s];
+    [_description setString:s];
+    [[_description textStorage] setFont:[NSFont userFixedPitchFontOfSize:0.0f]];
     
     [_albumArtView setImage:tl.albumArt];
 
