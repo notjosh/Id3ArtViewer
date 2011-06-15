@@ -10,11 +10,18 @@
 
 @implementation Id3v2AppDelegate
 
-@synthesize window;
+@synthesize mainWindowController = _mainWindowController;
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
-    // Insert code here to initialize your application
+- (void)dealloc {
+    [_mainWindowController release], _mainWindowController = nil;
+}
+
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    [_mainWindowController showWindow:self];
+}
+
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender {
+    return YES;
 }
 
 @end

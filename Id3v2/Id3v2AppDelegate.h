@@ -8,11 +8,13 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class MainWindowController;
+
 @interface Id3v2AppDelegate : NSObject <NSApplicationDelegate> {
 @private
-    NSWindow *window;
+    MainWindowController *_mainWindowController;
 }
 
-@property (assign) IBOutlet NSWindow *window;
+@property (assign) IBOutlet MainWindowController *mainWindowController;
 
 @end
