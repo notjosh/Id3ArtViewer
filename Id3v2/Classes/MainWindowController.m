@@ -40,6 +40,10 @@
     [[self window] registerForDraggedTypes:[NSArray arrayWithObject:NSFilenamesPboardType]];
 }
 
+- (void)awakeFromNib {
+    [_albumArtView unregisterDraggedTypes];
+}
+
 - (NSDragOperation)draggingEntered:(id <NSDraggingInfo>)info {
     NSArray *draggedPaths = [[info draggingPasteboard] propertyListForType:NSFilenamesPboardType];
 
