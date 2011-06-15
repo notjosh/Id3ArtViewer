@@ -1,0 +1,285 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		949E7B1713A8DF2600D51F48 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 949E7B1613A8DF2600D51F48 /* Cocoa.framework */; };
+		949E7B2113A8DF2600D51F48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 949E7B1F13A8DF2600D51F48 /* InfoPlist.strings */; };
+		949E7B2413A8DF2600D51F48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 949E7B2313A8DF2600D51F48 /* main.m */; };
+		949E7B2713A8DF2600D51F48 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 949E7B2513A8DF2600D51F48 /* Credits.rtf */; };
+		949E7B2A13A8DF2600D51F48 /* Id3v2AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 949E7B2913A8DF2600D51F48 /* Id3v2AppDelegate.m */; };
+		949E7B2D13A8DF2600D51F48 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 949E7B2B13A8DF2600D51F48 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		949E7B1213A8DF2600D51F48 /* Id3v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Id3v2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		949E7B1613A8DF2600D51F48 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		949E7B1913A8DF2600D51F48 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		949E7B1A13A8DF2600D51F48 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		949E7B1B13A8DF2600D51F48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		949E7B1E13A8DF2600D51F48 /* Id3v2-Info.plist */ = {isa = PBXFileReference; path = "Id3v2-Info.plist"; sourceTree = "<group>"; };
+		949E7B2013A8DF2600D51F48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		949E7B2213A8DF2600D51F48 /* Id3v2-Prefix.pch */ = {isa = PBXFileReference; path = "Id3v2-Prefix.pch"; sourceTree = "<group>"; };
+		949E7B2313A8DF2600D51F48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		949E7B2613A8DF2600D51F48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		949E7B2813A8DF2600D51F48 /* Id3v2AppDelegate.h */ = {isa = PBXFileReference; path = Id3v2AppDelegate.h; sourceTree = "<group>"; };
+		949E7B2913A8DF2600D51F48 /* Id3v2AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Id3v2AppDelegate.m; sourceTree = "<group>"; };
+		949E7B2C13A8DF2600D51F48 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		949E7B0F13A8DF2600D51F48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				949E7B1713A8DF2600D51F48 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		949E7B0713A8DF2600D51F48 = {
+			isa = PBXGroup;
+			children = (
+				949E7B1C13A8DF2600D51F48 /* Id3v2 */,
+				949E7B1513A8DF2600D51F48 /* Frameworks */,
+				949E7B1313A8DF2600D51F48 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		949E7B1313A8DF2600D51F48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				949E7B1213A8DF2600D51F48 /* Id3v2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		949E7B1513A8DF2600D51F48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				949E7B1613A8DF2600D51F48 /* Cocoa.framework */,
+				949E7B1813A8DF2600D51F48 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		949E7B1813A8DF2600D51F48 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				949E7B1913A8DF2600D51F48 /* AppKit.framework */,
+				949E7B1A13A8DF2600D51F48 /* CoreData.framework */,
+				949E7B1B13A8DF2600D51F48 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		949E7B1C13A8DF2600D51F48 /* Id3v2 */ = {
+			isa = PBXGroup;
+			children = (
+				949E7B2813A8DF2600D51F48 /* Id3v2AppDelegate.h */,
+				949E7B2913A8DF2600D51F48 /* Id3v2AppDelegate.m */,
+				949E7B2B13A8DF2600D51F48 /* MainMenu.xib */,
+				949E7B1D13A8DF2600D51F48 /* Supporting Files */,
+			);
+			path = Id3v2;
+			sourceTree = "<group>";
+		};
+		949E7B1D13A8DF2600D51F48 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				949E7B1E13A8DF2600D51F48 /* Id3v2-Info.plist */,
+				949E7B1F13A8DF2600D51F48 /* InfoPlist.strings */,
+				949E7B2213A8DF2600D51F48 /* Id3v2-Prefix.pch */,
+				949E7B2313A8DF2600D51F48 /* main.m */,
+				949E7B2513A8DF2600D51F48 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		949E7B1113A8DF2600D51F48 /* Id3v2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 949E7B3013A8DF2600D51F48 /* Build configuration list for PBXNativeTarget "Id3v2" */;
+			buildPhases = (
+				949E7B0E13A8DF2600D51F48 /* Sources */,
+				949E7B0F13A8DF2600D51F48 /* Frameworks */,
+				949E7B1013A8DF2600D51F48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Id3v2;
+			productName = Id3v2;
+			productReference = 949E7B1213A8DF2600D51F48 /* Id3v2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		949E7B0913A8DF2600D51F48 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 949E7B0C13A8DF2600D51F48 /* Build configuration list for PBXProject "Id3v2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 949E7B0713A8DF2600D51F48;
+			productRefGroup = 949E7B1313A8DF2600D51F48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				949E7B1113A8DF2600D51F48 /* Id3v2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		949E7B1013A8DF2600D51F48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				949E7B2113A8DF2600D51F48 /* InfoPlist.strings in Resources */,
+				949E7B2713A8DF2600D51F48 /* Credits.rtf in Resources */,
+				949E7B2D13A8DF2600D51F48 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		949E7B0E13A8DF2600D51F48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				949E7B2413A8DF2600D51F48 /* main.m in Sources */,
+				949E7B2A13A8DF2600D51F48 /* Id3v2AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		949E7B1F13A8DF2600D51F48 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				949E7B2013A8DF2600D51F48 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		949E7B2513A8DF2600D51F48 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				949E7B2613A8DF2600D51F48 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		949E7B2B13A8DF2600D51F48 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				949E7B2C13A8DF2600D51F48 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		949E7B2E13A8DF2600D51F48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		949E7B2F13A8DF2600D51F48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		949E7B3113A8DF2600D51F48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Id3v2/Id3v2-Prefix.pch";
+				INFOPLIST_FILE = "Id3v2/Id3v2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		949E7B3213A8DF2600D51F48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Id3v2/Id3v2-Prefix.pch";
+				INFOPLIST_FILE = "Id3v2/Id3v2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		949E7B0C13A8DF2600D51F48 /* Build configuration list for PBXProject "Id3v2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				949E7B2E13A8DF2600D51F48 /* Debug */,
+				949E7B2F13A8DF2600D51F48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		949E7B3013A8DF2600D51F48 /* Build configuration list for PBXNativeTarget "Id3v2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				949E7B3113A8DF2600D51F48 /* Debug */,
+				949E7B3213A8DF2600D51F48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 949E7B0913A8DF2600D51F48 /* Project object */;
+}
