@@ -8,6 +8,8 @@
 
 #import "MainWindowController.h"
 
+#import "TagLoader.h"
+
 @interface MainWindowController (Private)
 - (void)loadMp3Info:(NSString *)path;
 @end
@@ -69,7 +71,9 @@
 @implementation MainWindowController (Private)
 
 - (void)loadMp3Info:(NSString *)path {
-    NSLog(@"loading file info for: %@", path);
+    TagLoader *tl = [[TagLoader alloc] init];
+    [tl loadFileAtPath:path];
+    [tl release];
 }
 
 @end
