@@ -16,6 +16,10 @@
 
 @implementation MainWindowController
 
+@synthesize path = _path;
+@synthesize description = _description;
+@synthesize albumArtView = _albumArtView;
+
 - (void)dealloc {
     [super dealloc];
 }
@@ -73,6 +77,21 @@
 - (void)loadMp3Info:(NSString *)path {
     TagLoader *tl = [[TagLoader alloc] init];
     [tl loadFileAtPath:path];
+
+    [_path setStringValue:path];
+
+    NSMutableString *s = [NSMutableString string];
+    [s appendFormat:@"Title:   %@\n", tl.title];
+    [s appendFormat:@"Artist:  %@\n", tl.artist];
+    [s appendFormat:@"Album:   %@\n", tl.album];
+    [s appendFormat:@"Year:    %@\n", tl.year];
+    [s appendFormat:@"Comment: %@\n", tl.comment];
+    [s appendFormat:@"Track:   %@\n", tl.track];
+    [s appendFormat:@"Genre:   %@",   tl.title];
+    [_description setStringValue:s];
+    
+    [_albumArtView setImage:tl.albumArt];
+
     [tl release];
 }
 

@@ -11,7 +11,13 @@
 
 @interface MainWindowController : NSWindowController <NSWindowDelegate> {
 @private
-    
+    NSTextField *_path;
+    NSTextField *_description;
+    NSImageView *_albumArtView;
 }
+
+@property (assign) IBOutlet NSTextField *path;
+@property (assign) IBOutlet NSTextField *description;
+@property (assign) IBOutlet NSImageView *albumArtView;
 
 @end
