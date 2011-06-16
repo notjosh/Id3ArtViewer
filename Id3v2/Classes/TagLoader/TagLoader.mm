@@ -75,19 +75,19 @@ using namespace TagLib;
     // title
     s = f.tag()->title();
     if (false == s.isNull()) {
-        _title = [[NSString stringWithUTF8String:s.toCString()] retain];
+        _title = [[NSString stringWithUTF8String:s.toCString(true)] retain];
     }
 
     // artist
     s = f.tag()->artist();
     if (false == s.isNull()) {
-        _artist = [[NSString stringWithUTF8String:s.toCString()] retain];
+        _artist = [[NSString stringWithUTF8String:s.toCString(true)] retain];
     }
 
     // album
     s = f.tag()->album();
     if (false == s.isNull()) {
-        _album = [[NSString stringWithUTF8String:s.toCString()] retain];
+        _album = [[NSString stringWithUTF8String:s.toCString(true)] retain];
     }
 
     // year
@@ -98,7 +98,7 @@ using namespace TagLib;
     // comment
     s = f.tag()->comment();
     if (false == s.isNull()) {
-        _comment = [[NSString stringWithUTF8String:s.toCString()] retain];
+        _comment = [[NSString stringWithUTF8String:s.toCString(true)] retain];
     }
 
     // year
@@ -109,7 +109,7 @@ using namespace TagLib;
     // genre
     s = f.tag()->genre();
     if (false == s.isNull()) {
-        _genre = [[NSString stringWithUTF8String:s.toCString()] retain];
+        _genre = [[NSString stringWithUTF8String:s.toCString(true)] retain];
     }
 
     ID3v2::Tag *id3v2tag = f.ID3v2Tag();
